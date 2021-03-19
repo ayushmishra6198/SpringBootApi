@@ -1,6 +1,9 @@
 pipeline{
     agent any
-
+    tools 
+    {
+        jdk 'Jenkins-Java'
+    }
     stages{
         stage('Compile Stage'){
             
