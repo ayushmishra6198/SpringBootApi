@@ -14,7 +14,7 @@ pipeline{
         stage('Testing Stage'){
             steps{
             withMaven(maven:'Jenkins-Maven') {
-                sh 'mvn clean compile'
+                sh 'mvn test'
                 }
             }
 
